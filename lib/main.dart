@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData.dark().copyWith(
-          appBarTheme: AppBarTheme(color: Colors.purple),
+          appBarTheme: AppBarTheme(color: Color(0xff141518)),
           scaffoldBackgroundColor: Colors.black,
         ),
         home: Dashboard(),

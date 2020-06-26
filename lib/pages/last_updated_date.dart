@@ -23,9 +23,15 @@ class LastUpdatedDateStatus extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.all(8),
-      child: Text(
-        text,
-        textAlign: TextAlign.center,
+      child: Container(alignment: Alignment.center,
+        height: 40,
+        color: Colors.white,
+        child: Text(
+          text,
+          style: TextStyle(
+              color: Colors.purple, fontWeight: FontWeight.w800, fontSize: 16),
+          textAlign: TextAlign.center,
+        ),
       ),
     );
   }

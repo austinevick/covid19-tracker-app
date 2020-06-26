@@ -56,6 +56,7 @@ class _DashboardState extends State<Dashboard> {
             : null);
     return Scaffold(
       appBar: AppBar(
+        
         centerTitle: true,
         title: Text('Coronavirus Tracker'),
       ),
@@ -66,6 +67,7 @@ class _DashboardState extends State<Dashboard> {
             LastUpdatedDateStatus(
               text: formatter.lastUpdatedStatusText(),
             ),
+            Center(child: Text('Global Record',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w800),)),
             for (var endpoint in Endpoint.values)
               EndpointCard(
                 endpoint: endpoint,
